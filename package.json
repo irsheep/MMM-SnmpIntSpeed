@@ -1,0 +1,27 @@
+{
+  "name": "mmm-snmpintspeed",
+  "version": "1.0.0",
+  "description": "Checks interface bandwidth usage via SNMP",
+  "main": "MMM-SnmpIntSpeed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irsheep/MMM-SnmpIntSpeed.git"
+  },
+  "keywords": [
+    "snmp",
+    "bandwidth",
+    "magicmirror"
+  ],
+  "author": "Luis \"sheep\" Tavares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irsheep/MMM-SnmpIntSpeed/issues"
+  },
+  "homepage": "https://github.com/irsheep/MMM-SnmpIntSpeed#readme",
+  "dependencies": {
+    "net-snmp": "^1.2.4"
+  }
+}

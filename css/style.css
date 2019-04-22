@@ -1,0 +1,4 @@
+#downloadSpeedGauge, #uploadSpeedGauge{
+    width:150px; height:100px;
+    display: inline-block;
+}
