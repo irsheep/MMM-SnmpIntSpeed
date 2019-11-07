@@ -107,6 +107,10 @@ function PrepareData() {
   // Load previous pooled data and replace with the updated data
   if (fs.existsSync(dataFile)) {
     savedJson = JSON.parse(fs.readFileSync(dataFile, 'utf8'))
+  } else {
+    savedJson = []
+    savedJson[host] = []
+    savedJson[host][index] = 0
   }
 
   // Return 0's if there was no previous data, or the speeds would make no sense
