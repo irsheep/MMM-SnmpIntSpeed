@@ -28,7 +28,8 @@ Add the module to your modules array in the MagicMirror configuration file.
     community: 'public',
     version: 2,
     host: "localhost",
-    index: 1
+    index: 1,
+    speed: auto
   }
 },
 ```
@@ -118,7 +119,16 @@ Here is the documentation of options for the modules configuration:
         <strong>Possible values:</strong>
       </td>
     </tr>
-
+    <tr>
+      <td><code>speed</code></td>
+      <td>
+        Manually defines the interface speed in bps, this is useful in cases where the line speed doesn't match the port speed. For example if you have a 100Mb internet line connected to a 1Gb port, then you can set the speed to 100000000. If this setting is not defined, set to <code>auto</code> or <code>0</code>, then the advertised speed by the interface will be used.<br />
+        <br />
+        <strong>Default: </strong><code>auto</code><br />
+        <strong>Type: </strong> <code>number</code><br />
+        <strong>Possible values:</strong> A number representing the speed in bps, for example 100000000.
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -126,7 +136,7 @@ Here is the documentation of options for the modules configuration:
 
 Styling using CSS is currently a work in progress and currently is mainly used to facilitate changing the size of the gauges. The example below will change the gauges size from the 150x100 default size to 300x200 pixels in size.
 
-```
+```css
 #downloadSpeedGauge, #uploadSpeedGauge{
   width:300px; height:200px;
 }
